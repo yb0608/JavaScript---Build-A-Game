@@ -1,0 +1,82 @@
+div.pictures ul {
+    list-style: none;
+}
+
+div.pictures ul li {
+    display: inline;
+}
+
+#identify {
+    display: none;
+}
+
+#drawingRef{
+    display: none;
+    margin-right: 2em;
+}
+
+#canvas {
+    display: none;
+}
+
+
+canvas {
+    border:1px solid grey;
+}
+
+form {
+    float: left;
+}
+#right, #wrong{
+    font-weight: bold;
+    font-size: 16pt;
+    display: none;
+}
+#fruitPic, #leafPic{
+    display: none;
+}
+
+.hints{
+    display: none;
+    color: red;
+}
+
+div.facts {
+    display: none;
+    font-size: bold;
+    width: 90%;
+}
+
+label{
+	display: inline-block;
+	width: 5em;
+}
+
+.info div {
+	display: inline-block;
+	width: 10em;
+}
+
+.infoHead {
+	font-weight: bold;
+	border-bottom: 3px solid forestgreen;
+	width: 30em;
+}
+
+.button {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	height: 30px;
+	width: 82px;
+	line-height: 14px;
+	padding: .5em;
+	text-align: center;
+	background-color:darkseagreen;
+}
+
+div.Card {
+    
+    display: none;
+}

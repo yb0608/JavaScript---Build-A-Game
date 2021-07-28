@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tree Game</title>
+    <link rel="stylesheet" href="./style/TreeGame.css" />
+    <script type="text/javascript" src="./script/jquery-1.11.0.js"></script>
+    <script src="./script/TreeGame.js"></script>
+</head>
+
+<body>
+    <div class="pictures">
+        <ul>
+            <li><img id="treePic" src="images/tree.png" height="300px" width="290px" /></li>
+            <li><img id="fruitPic" src="images/fruit.png" height="300px" width="290px" /></li>
+            <li><img id="leafPic" src="images/leaf.png" height="300px" width="290px" /></li>
+        </ul>
+    </div>
+    <div class="gameContent">
+        <p> what is this tree? </p>
+        <p>Your Answer: <input id="answer" type="text"><button type="button" id="okBttn"> OK </button><span id="guess_counts"> You have <span id="counts_left"> 3 </span>guess left.</span></p>
+        <span class="hints" id="fruitHint">(Didn't get it right? Let's take a look at its fruit.)</span>
+        <span class="hints" id="leafHint">(Still no clue? Let's take a look at its leaves.)</span>
+        <p id="right">Congratulations! You get it right!</p>
+        <p id="wrong">Sorry, you have used all your chances. This is a Ginkgo/Maidenhair tree.</p>
+    </div>
+    <br />
+
+    <div id="identify">
+        <p>Now point out which one is a Ginkgo tree leaf? (click the right image)</p>
+        <img class="id_img" id="leaf1" src="images/identify-01.jpg" height="200px" width="200px" />
+        <img class="id_img" id="leaf2" src="images/identify-02.jpg" height="200px" width="200px" />
+        <img class="id_img" id="leaf3" src="images/identify-03.jpg" height="200px" width="200px" />
+        <br>
+        <img class="id_img" id="leaf4" src="images/identify-05.jpg" height="200px" width="200px" />
+        <img class="id_img" id="leaf5" src="images/identify-04.jpg" height="200px" width="200px" />
+        <img class="id_img" id="leaf6" src="images/identify-06.jpg" height="200px" width="200px" />
+        <br>
+        <img class="id_img" id="leaf7" src="images/identify-07.jpg" height="200px" width="200px" />
+        <img class="id_img" id="leaf8" src="images/identify-08.jpg" height="200px" width="200px" />
+        <img class="id_img" id="leaf9" src="images/identify-09.jpg" height="200px" width="200px" />
+    </div>
+    <br />
+    <br />
+
+
+    <div id="drawingRef">
+        <p>Now, let's draw your own tree leaf!</p>
+        <img src="images/single.png" height="300px" width="290px" />
+    </div>
+
+    <div id="canvas">
+        <canvas id="c1" width="350" height="300"></canvas>
+        <input id="red" class="color" type="button" value="Red">
+        <input id="blue" class="color" type="button" value="Blue">
+        <input id="green" class="color" type="button" value="Green">
+        <input id="clear" class="control" type="button" value="Start Over!">
+        <br>
+        <input id="capture" type="button" value="Save">
+    </div>
+
+    <br />
+    <br />
+    <div class="facts">
+        <div id="select1Div">
+            <p>Lastly, Let's learn something more about Ginkgo tree! (Choose a thing that interests you!)</p>
+            <select name="firstSelect" id="firstSelect">
+                <option>----</option>
+                &nbsp;
+            </select>
+        </div>
+        <div id="message">
+            <p id="messageShow"></p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="Card">
+        <p>Before you exit, let's build your own Gingkgo Tree Game Card!</p>
+        <label for="name">Name</label><input type="text" size="40" id="name">
+        <br>
+        <label for="phone">ID(phone)</label><input type="text" size="40" id="phone"><sapn class="hints" id="phoneSpan">(Please enter a 10 digit phone number.)</sapn><br>
+        <button id="cardbttn" class="button">Generate</button>
+
+        <fieldset style="width:0px">
+            <legend><h2>My Card</h2></legend>
+            <div id="idImg"></div>
+            <div id="output">
+                <div class="info infoHead">
+                    <div>Name</div><div>ID</div><div>Counts Used</div>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+
+
+
+
+</body>
