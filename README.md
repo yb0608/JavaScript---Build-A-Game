@@ -10,4 +10,4 @@ This web app emplementation is a small game page that uses JavaScript and jQuery
 
 ## Getting Started
 
-Download the files and open the html page, have fun this little tree game!
+Download the files and open the TreeGame.html page, and have fun this little game!
